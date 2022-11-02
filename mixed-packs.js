@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   // if qtyAllowed == 12 or 24 set qtyAllowed to 4
     if (mixedQty == 12 || mixedQty == 24) {
-        qtyAllowed = 4;
+        qtyAllowed = mixedQty / 4;
     }
   
   $(".sqs-add-to-cart-button.use-form").click(function() {
@@ -20,8 +20,12 @@ $(document).ready(function() {
 			//add disclaimer about 
 			$('<span> - Mixed ' + mixedQty +' pack</span>').appendTo(".form-title");
 			$('.form-title').wrapAll('<div class="custom-form-heading-wrapper"></div>');
-			$('<div class="custom-subtitle">Test!!!!</div>').appendTo(".lightbox-content .custom-form-heading-wrapper");
 			$('<div class="custom-subtitle">If you are ordering multiple mixed packs and would like to have a different selection in each, please add these to your cart separately.</div>').appendTo(".lightbox-content .custom-form-heading-wrapper");
+			
+			if (mixedQty == 12 || mixedQty == 24) {
+				$('<div class="custom-subtitle">Please note, flavours are now in multiples of 4. </div>').appendTo(".lightbox-content .custom-form-heading-wrapper");
+			}
+
             
             //pretty print inputs    
             $(".lightbox-content form .form-item.number label").each(function(){
