@@ -1,0 +1,30 @@
+
+.form-inner-wrapper form {
+    margin-top: 0 !important;
+}
+.custom-subtitle {
+    margin: 10px 0 30px;
+    color: #787878;
+}
+.custom-form-heading-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: white;
+}
+.sqs-modal-lightbox-content .lightbox-inner .lightbox-content .lightbox-close {
+    z-index: 9999;
+}
+@media screen and (min-width: 769px) {
+    .lightbox-content .form-wrapper.custom-form .field-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .lightbox-content .form-wrapper.custom-form .field-list .form-item {
+        margin-bottom: 0 !important;
+    }
+    .lightbox-content .form-wrapper.custom-form input[type="submit"] {
+        margin-top: 10px !important;
+    }
+}

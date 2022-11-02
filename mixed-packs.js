@@ -3,7 +3,7 @@ $(document).ready(function() {
     var mixedQty = parseInt( $(".ProductItem-details-title").text().replace(/[^0-9]/gi, '') );
     var qtyAllowed = mixedQty;
 
-  // if qtyAllowed == 12 or 24 set qtyAllowed to 4
+  // if qtyAllowed == 12 or 24 set qtyAllowed to mixedQty / 4
     if (mixedQty == 12 || mixedQty == 24) {
         qtyAllowed = mixedQty / 4;
     }
