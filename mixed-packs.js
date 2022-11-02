@@ -23,9 +23,9 @@ $(document).ready(function() {
 			$('<div class="custom-subtitle">If you are ordering multiple mixed packs and would like to have a different selection in each, please add these to your cart separately.</div>').appendTo(".lightbox-content .custom-form-heading-wrapper");
 			
 			if (mixedQty == 12 || mixedQty == 24) {
-				$('<div class="custom-subtitle">Please note, flavours are now in multiples of 4. </div>').appendTo(".lightbox-content .custom-form-heading-wrapper");
+				$('<div class="custom-subtitle">Our premixed spirits are packed in groups of 4 - when you place a 1 in each field it means you will receive 4 individual cans of that flavour.</div>').appendTo(".lightbox-content .custom-form-heading-wrapper");
 			}
-
+			
             
             //pretty print inputs    
             $(".lightbox-content form .form-item.number label").each(function(){
