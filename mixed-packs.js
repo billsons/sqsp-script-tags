@@ -21,6 +21,7 @@ $(document).ready(function() {
 			$('<span> - Mixed ' + mixedQty +' pack</span>').appendTo(".form-title");
 			$('.form-title').wrapAll('<div class="custom-form-heading-wrapper"></div>');
 			$('<div class="custom-subtitle">If you are ordering multiple mixed packs and would like to have a different selection in each, please add these to your cart separately.</div>').appendTo(".lightbox-content .custom-form-heading-wrapper");
+			$('<div class="custom-subtitle">Test!!!!</div>').appendTo(".lightbox-content .custom-form-heading-wrapper");
             
             //pretty print inputs    
             $(".lightbox-content form .form-item.number label").each(function(){
